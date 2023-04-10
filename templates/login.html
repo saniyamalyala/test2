@@ -1,0 +1,15 @@
+    <Html>    
+    <Head>  
+    <title>  
+    {{msg}} 
+    </title>  
+    </Head>  
+    <Body>   
+   <form action="{{url_for('loginmethod')}}" method="post">
+   <p>username:</p><input id="username" name="username" /><br></br>
+   <p>password:</p><input id="password" name="password"/><br></br>
+   <input type="submit" class="btn"></br></br>
+   </form>
+   <a href="{{url_for('registermethod')}}">dont have account</a>
+    </Body>  
+    </Html>
